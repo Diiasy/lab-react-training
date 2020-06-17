@@ -1,0 +1,17 @@
+.idcard{
+    display: flex;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+.idcard-info{
+    margin: 0;
+    padding: 0 5px;
+    text-align: left;
+}
+
+.idcard-info p{
+    margin: 0;
+    padding: 0;
+}

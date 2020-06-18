@@ -1,0 +1,32 @@
+.creditcard{
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.creditcard img{
+    height: 25px;
+    float: right;
+}
+
+.creditcard h2{
+    font-size: 40px;
+    font-weight: 400;
+    padding: 15px;
+    margin: 40px 0 0 0 ;
+}
+
+.creditcard div{
+    display: flex;
+}
+
+.creditcard div p{
+    padding-right: 20px;
+}
+
+.creditcard p{
+    margin: 0;
+    text-align: left;
+}
+

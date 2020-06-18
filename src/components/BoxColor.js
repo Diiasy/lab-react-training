@@ -4,13 +4,7 @@ import './BoxColor.css';
 function BoxColor(props){
 
     function decToHex (num) {
-        let result;
-        if (num < 16 ) {
-            result = '0' + num.toString(16);
-        } else {
-            result = num.toString(16);
-        }
-        return result;
+        return num < 16 ? '0' + num.toString(16) : num.toString(16);
     }
 
     function rgbToHex (r, g, b) {
@@ -20,11 +14,7 @@ function BoxColor(props){
     //https://www.w3.org/TR/AERT/#color-contrast
     function contrastWithBg (r, g, b) {
         let ratio = ((r * 299) + (g * 587) + (b * 114)) / 1000;
-        if (ratio > 125){
-            return 'black';
-        } else {
-            return 'white';
-        }
+        return ratio > 125 ? 'black' : 'white'
     }
 
     const divStyle = {
